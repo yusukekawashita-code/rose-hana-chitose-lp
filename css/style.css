@@ -14,6 +14,7 @@ COMMON
   --font-biz: "BIZ UDPGothic", sans-serif;
 
   /* font sizes */
+  --fz18: clamp(0.938rem, 0.894rem + 0.19vw, 1.125rem);
   --fz20: clamp(1rem, 0.939rem + 0.26vw, 1.25rem);
   --fz23: clamp(1.063rem, 0.971rem + 0.39vw, 1.438rem);
   --fz25: clamp(1.125rem, 1.019rem + 0.45vw, 1.563rem);
@@ -1083,7 +1084,7 @@ FEATURES
   }
 
   .manager__description p {
-    font-size: var(--fz25);
+    font-size: var(--fz23);
     font-weight: 400;
     line-height: 1.85;
   }
@@ -1109,5 +1110,207 @@ FEATURES
   .manager__name {
     font-size: 20px;
     letter-spacing: 0.03em;
+  }
+}
+
+/* =========================
+   FACILITY
+========================= */
+
+.facility {
+  padding: 130px 0 130px;
+}
+
+.facility__inner {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.facility__heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 45px;
+  margin: 0 0 32px;
+  background: url(../images/facility-heading-bg.png) center / 100% 100% no-repeat;
+  color: var(--font-black);
+  font-family: var(--font-biz);
+  font-size: var(--fz30);
+  text-align: center;
+}
+
+.facility__item {
+  display: grid;
+  grid-template-columns: 135px minmax(0, 1fr);
+  align-items: center;
+  min-height: 64px;
+  border-bottom: 1px solid #999;
+}
+
+.facility__item:last-child {
+  border-bottom: none;
+}
+
+.facility__label,
+.facility__value {
+  margin: 0;
+  color: var(--font-black);
+  font-family: var(--font-biz);
+  font-size: var(--fz18);
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.facility__label {
+  padding: 4px;
+  letter-spacing: 0.2em;
+}
+
+.facility__value {
+  min-width: 0;
+  padding: 12px 0;
+}
+
+.facility__value a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.facility__value a:hover {
+  opacity: 0.7;
+}
+
+/* 写真・マップ */
+.facility__access {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 30px;
+}
+
+.facility__image {
+  overflow: hidden;
+  aspect-ratio: 443 / 310;
+}
+
+.facility__image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Googleマップ */
+.facility__map {
+  width: 100%;
+  min-width: 0;
+  aspect-ratio: 443 / 310;
+  overflow: hidden;
+}
+
+.facility__map iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.facility__map-title {
+  font-size: var(--fz30);
+  font-weight: 400;
+}
+
+.facility__map-address {
+  font-size: var(--fz23);
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+@media screen and (max-width: 1023px) {
+  .facility {
+    padding: 90px 0 100px;
+  }
+
+  .facility__inner {
+    max-width: 800px;
+  }
+
+  .facility__heading {
+    min-height: 55px;
+  }
+
+  .facility__item {
+    grid-template-columns: 110px minmax(0, 1fr);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .facility {
+    padding: 70px 0 80px;
+  }
+
+  .facility__inner {
+    width: auto;
+    max-width: none;
+  }
+
+  .facility__heading {
+    min-height: 50px;
+    margin-bottom: 25px;
+    letter-spacing: 0.2em;
+  }
+
+  .facility__item {
+    grid-template-columns: 75px minmax(0, 1fr);
+    min-height: 55px;
+  }
+
+  .facility__label,
+  .facility__value {
+    font-size: var(--fz20);
+    line-height: 1.7;
+  }
+
+  .facility__label {
+    padding: 12px 8px 12px 0;
+    letter-spacing: 0.05em;
+  }
+
+  .facility__value {
+    padding: 12px 0;
+    overflow-wrap: anywhere;
+  }
+
+  /* 写真・マップを縦並び */
+  .facility__access {
+    grid-template-columns: 1fr;
+    margin-top: 30px;
+  }
+
+  .facility__image {
+    aspect-ratio: 800 / 557;
+  }
+
+  .facility__map-title {
+    font-size: var(--fz25);
+  }
+
+  .facility__map-address {
+    font-size: var(--fz20);
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .facility__inner {
+    margin: 0 15px;
+  }
+
+  .facility__item {
+    grid-template-columns: 65px minmax(0, 1fr);
+  }
+
+  .facility__label,
+  .facility__value {
+    font-size: 13px;
   }
 }
