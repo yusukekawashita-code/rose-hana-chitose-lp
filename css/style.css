@@ -884,3 +884,230 @@ FEATURES
     padding: 25px 15px;
   }
 }
+
+/* =========================
+   MANAGER
+========================= */
+
+.manager {
+  padding: 120px 0 150px;
+  background-color: #fbe7ee;
+}
+
+.manager .common__heading {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.manager__inner {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.manager__content {
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.manager__image {
+  flex: 0 0 230px;
+  width: 230px;
+}
+
+.manager__body {
+  flex: 1;
+  min-width: 0;
+}
+
+.manager__title {
+  color: var(--font-black);
+  font-family: var(--font-biz);
+  font-size: var(--fz25);
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.manager__profile {
+  font-size: 15px;
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 2px solid #fff;
+  text-align: right;
+}
+
+.manager__position {
+  margin: 0;
+  color: var(--font-black);
+  font-family: var(--font-biz);
+  font-size: 14px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+}
+
+.manager__name {
+  margin-top: 4px;
+  color: var(--font-black);
+  font-family: var(--font-biz);
+  font-size: var(--fz23);
+  font-weight: 500;
+  letter-spacing: 0.1em;
+}
+
+.manager__description {
+  margin-top: 20px;
+}
+
+.manager__description p {
+  margin: 0;
+  color: var(--font-black);
+  font-family: var(--font-biz);
+  font-size: var(--fz20);
+  font-weight: 400;
+  line-height: 2;
+}
+
+.manager__description p + p {
+  margin-top: 45px;
+}
+
+@media screen and (max-width: 1023px) {
+  .manager {
+    padding: 90px 0 100px;
+  }
+
+  .manager__inner {
+    max-width: 800px;
+  }
+
+  .manager__content {
+    gap: 30px;
+  }
+
+  .manager__image {
+    flex: 0 0 230px;
+    width: 230px;
+  }
+
+  .manager__title {
+    font-size: 22px;
+  }
+
+  .manager__description p + p {
+    margin-top: 35px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .manager {
+    padding: 55px 0 80px;
+  }
+
+  .manager__inner {
+    width: 100%;
+    max-width: none;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  /* 共通見出し */
+  .manager .common__heading {
+    margin-bottom: 25px;
+  }
+
+  /* 全体の配置 */
+  .manager__content {
+    display: grid;
+    grid-template-columns: 40% minmax(0, 1fr);
+    column-gap: 12px;
+    row-gap: 20px;
+    align-items: start;
+  }
+
+  .manager__body {
+    display: contents;
+  }
+
+  /* キャッチコピー */
+  .manager__title {
+    grid-column: 1 / -1;
+    grid-row: 1;
+    margin: 0;
+    font-weight: 700;
+    line-height: 1.45;
+  }
+
+  /* 管理者写真 */
+  .manager__image {
+    grid-column: 1;
+    grid-row: 2;
+    width: 100%;
+    min-width: 0;
+  }
+
+  .manager__image img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  /* 管理者情報 */
+  .manager__profile {
+    grid-column: 2;
+    grid-row: 2;
+    margin-top: 0;
+    padding-top: 8px;
+    border-top: 2px solid #fff;
+    text-align: left;
+  }
+
+  .manager__position {
+    font-size: var(--fz23);
+    line-height: 1.5;
+    letter-spacing: 0;
+  }
+
+  .manager__name {
+    margin-top: 20px;
+    font-size: var(--fz40);
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    white-space: nowrap;
+  }
+
+  /* コメント本文 */
+  .manager__description {
+    grid-column: 1 / -1;
+    grid-row: 3;
+    margin-top: 0;
+  }
+
+  .manager__description p {
+    font-size: var(--fz25);
+    font-weight: 400;
+    line-height: 1.85;
+  }
+
+  .manager__description p + p {
+    margin-top: 24px;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .manager__inner {
+    padding: 0 15px;
+  }
+
+  .manager__content {
+    column-gap: 10px;
+  }
+
+  .manager__position {
+    font-size: 12px;
+  }
+
+  .manager__name {
+    font-size: 20px;
+    letter-spacing: 0.03em;
+  }
+}
