@@ -1695,3 +1695,145 @@ FEATURES
     margin-top: 45px;
   }
 }
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact {
+  padding: 80px 0 120px;
+}
+
+.contact__inner {
+  max-width: 900px;
+}
+
+.contact__heading {
+  width: fit-content;
+  margin: 0 auto;
+  border-bottom: 1px solid #d4145a;
+  color: var(--font-black);
+  font-family: var(--font-biz);
+  font-size: var(--fz30);
+  text-align: center;
+  letter-spacing: 0.2em;
+}
+
+.contact__box {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 80px;
+  margin-top: 40px;
+  padding: 75px 70px;
+  border: 2px solid #d4145a;
+  border-radius: 28px;
+  box-sizing: border-box;
+}
+
+/* 電話・Webの見出し */
+.contact__title {
+  display: flex;
+  align-items: baseline;
+  margin: 0 0 24px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #d4145a;
+  color: var(--font-black);
+  font-family: var(--font-biz);
+  font-size: var(--fz20);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.contact__title span {
+  font-size: 14px;
+  letter-spacing: 0;
+}
+
+.contact__button {
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  min-height: 55px;
+  padding: 12px 24px;
+  border-radius: 28px;
+  background-color: #d4145a;
+  color: #fff;
+  font-family: var(--font-biz);
+  font-size: var(--fz25);
+  white-space: nowrap;
+  box-sizing: border-box;
+  transition: opacity 0.3s ease;
+}
+
+.contact__button:hover {
+  opacity: 0.75;
+}
+
+.contact__button img {
+  display: block;
+  flex-shrink: 0;
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 1023px) {
+  .contact {
+    padding: 90px 0 100px;
+  }
+
+  .contact__box {
+    gap: 60px;
+    margin-top: 50px;
+    padding: 50px 30px;
+  }
+
+  .contact__button img {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contact {
+    padding: 70px 0 80px;
+  }
+
+  .contact__box {
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 40px;
+    padding: 35px 20px;
+    border-radius: 20px;
+  }
+
+  .contact__item {
+    width: 100%;
+  }
+
+  .contact__title {
+    min-height: auto;
+    margin-bottom: 20px;
+    font-size: var(--fz25);
+    text-align: center;
+  }
+
+  .contact__title span {
+    font-size: 12px;
+  }
+
+  .contact__button {
+    min-height: 60px;
+    padding: 10px;
+    font-size: clamp(17px, 5vw, 24px);
+  }
+
+  .contact__button img {
+    width: 32px;
+    height: 32px;
+  }
+}
