@@ -1837,3 +1837,201 @@ FEATURES
     height: 32px;
   }
 }
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+  position: relative;
+  padding: 80px 20px 60px;
+  background-color: #d4145a;
+  color: #fff;
+}
+
+.footer__inner {
+  max-width: 840px;
+  margin: 0 auto;
+}
+
+/* ページトップ */
+.footer__pagetop {
+  position: absolute;
+  top: -20px;
+  right: 5%;
+  display: block;
+  width: 45px;
+  z-index: 2;
+  transition: opacity 0.3s;
+}
+
+.footer__pagetop img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.footer__pagetop:hover {
+  opacity: 0.7;
+}
+
+.footer__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.footer__brand {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer__logo {
+  flex: 0 0 65px;
+  width: 65px;
+}
+
+.footer__brand-text {
+  min-width: 0;
+}
+
+.footer__subtitle {
+  margin: 0;
+  color: #fff;
+  font-family: var(--font-biz);
+  font-size: var(--fz20);
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.footer__name {
+  margin: 0;
+  color: #fff;
+  font-family: var(--font-biz);
+  font-size: var(--fz45);
+  line-height: 1.3;
+  letter-spacing: 0.1em;
+  white-space: nowrap;
+}
+
+.footer__info {
+  color: #fff;
+  font-family: var(--font-biz);
+  font-size: var(--fz20);
+  line-height: 1.4;
+}
+
+.footer__info p {
+  margin: 0;
+}
+
+.footer__info a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer__info a:hover {
+  text-decoration: underline;
+}
+
+.footer__copyright {
+  margin: 55px 0 0;
+  color: #fff;
+  font-family: var(--font-biz);
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.6;
+}
+
+@media screen and (max-width: 1023px) {
+  .footer {
+    padding: 75px 30px 40px;
+  }
+
+  .footer__content {
+    gap: 30px;
+  }
+
+  .footer__brand {
+    gap: 12px;
+  }
+
+  .footer__logo {
+    flex-basis: 60px;
+    width: 60px;
+  }
+
+  .footer__name {
+    font-size: 30px;
+  }
+
+  .footer__subtitle {
+    font-size: 15px;
+  }
+
+  .footer__info {
+    font-size: 15px;
+  }
+
+  .footer__copyright {
+    margin-top: 45px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer {
+    padding: 40px 20px 30px;
+  }
+
+  .footer__inner {
+    width: 100%;
+  }
+
+  .footer__pagetop {
+    top: -25px;
+    right: 20px;
+    width: 40px;
+  }
+
+  .footer__content {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .footer__brand {
+    justify-content: center;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .footer__logo {
+    flex: 0 0 55px;
+    width: 55px;
+  }
+
+  .footer__subtitle {
+    font-size: 13px;
+  }
+
+  .footer__name {
+    font-size: 27px;
+    letter-spacing: 0.02em;
+  }
+
+  .footer__info {
+    width: 100%;
+    font-size: 15px;
+    line-height: 1.7;
+    text-align: center;
+  }
+
+  .footer__copyright {
+    margin-top: 40px;
+    font-size: 11px;
+    line-height: 1.8;
+  }
+}
