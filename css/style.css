@@ -1138,6 +1138,7 @@ FEATURES
   font-family: var(--font-biz);
   font-size: var(--fz30);
   text-align: center;
+  letter-spacing: 0.5em;
 }
 
 .facility__item {
@@ -1312,5 +1313,146 @@ FEATURES
   .facility__label,
   .facility__value {
     font-size: 13px;
+  }
+}
+
+/* =========================
+   AVAILABILITY
+========================= */
+
+.availability {
+  padding: 100px 0 120px;
+  background-color: #fbe7ee;
+}
+
+.availability__inner {
+  max-width: 900px;
+}
+
+.availability__heading {
+  width: fit-content;
+  margin: 0 auto;
+  padding: 12px;
+  border-radius: 12px;
+  background-color: #d4145a;
+  color: #fff;
+  font-family: var(--font-biz);
+  font-size: var(--fz30);
+  line-height: 1.4;
+  letter-spacing: 0.2em;
+  text-align: center;
+}
+
+.availability__box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 900px;
+  min-height: 125px;
+  margin: 60px auto 0;
+  padding: 25px;
+  border: 1px solid #d4145a;
+  border-radius: 20px;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+.availability__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.availability__icon {
+  display: block;
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+}
+
+.availability__label {
+  color: var(--font-black);
+  font-family: var(--font-biz);
+  font-size: var(--fz25);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.availability__number {
+  display: flex;
+  align-items: baseline;
+  margin: 0 0 0 8px;
+  color: var(--font-black);
+  font-family: var(--font-biz);
+  font-size: var(--fz30);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.availability__number span {
+  font-size: var(--fz40);
+  font-weight: 700;
+  line-height: 1;
+}
+
+@media screen and (max-width: 1023px) {
+  .availability {
+    padding: 90px 0 100px;
+  }
+
+  .availability__box {
+    margin-top: 55px;
+    min-height: 125px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .availability {
+    padding: 70px 0 80px;
+  }
+
+  .availability__heading {
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-size: var(--fz30);
+    letter-spacing: 0.1em;
+    min-width: 200px;
+  }
+
+  .availability__box {
+    min-height: 110px;
+    margin-top: 45px;
+    padding: 25px 15px;
+    border-radius: 15px;
+  }
+
+  .availability__content {
+    gap: 10px;
+  }
+
+  .availability__icon {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .availability {
+    padding: 60px 0 70px;
+  }
+
+  .availability__box {
+    margin-top: 35px;
+    padding: 20px 10px;
+  }
+
+  .availability__content {
+    gap: 8px;
+  }
+
+  .availability__icon {
+    width: 30px;
+    height: 30px;
   }
 }
