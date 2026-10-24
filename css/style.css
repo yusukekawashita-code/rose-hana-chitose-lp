@@ -1607,3 +1607,91 @@ FEATURES
     height: 180px;
   }
 }
+
+/* =========================
+   PRICING
+========================= */
+
+.pricing {
+  padding: 110px 0 110px;
+  background-color: #fbe7ee;
+}
+
+.pricing__inner {
+  max-width: 900px;
+}
+
+.pricing__heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 45px;
+  margin: 0 0 32px;
+  background: url(../images/pricing-heading-bg.png) center / 100% 100% no-repeat;
+  color: var(--font-black);
+  font-family: var(--font-biz);
+  font-size: var(--fz30);
+  text-align: center;
+  letter-spacing: 0.5em;
+}
+
+/* 書類リンク */
+.pricing__documents {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+  width: fit-content;
+  margin: 48px auto 0;
+}
+
+.pricing__document {
+  color: #d4145a;
+  font-family: var(--font-biz);
+  font-size: var(--fz30);
+}
+
+.pricing__document span {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.pricing__example {
+  margin-top: 55px;
+}
+
+@media screen and (max-width: 1023px) {
+  .pricing {
+    padding: 90px 0 100px;
+  }
+
+  .pricing__documents {
+    margin-top: 45px;
+    gap: 35px;
+  }
+
+  .pricing__example {
+    margin-top: 55px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .pricing {
+    padding: 70px 0 80px;
+  }
+  .pricing__heading {
+    min-height: 45px;
+    letter-spacing: 0.15em;
+  }
+
+  .pricing__documents {
+    align-items: flex-start;
+    gap: 16px;
+    margin-top: 40px;
+  }
+
+  .pricing__example {
+    margin-top: 45px;
+  }
+}
