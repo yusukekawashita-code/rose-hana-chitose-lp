@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="ja">
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ローズ華ちとせ</title>
+  <meta name="description" content="ローズ華ちとせ 小規模多機能型居宅介護" />
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="icon" href="images/favicon.ico" />
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=Noto+Sans+JP:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/main.js" defer></script>
+</head>
+
+
+<body>
+
+  <header class="header">
+    <div class="header__inner inner">
+      <h1 class="header__logo">
+        <a href="index.html" class="header__link">
+          <img src="images/logo-rose-garden.png" alt="ローズガーデン条南苑" class="header__logo-image" width="50" height="50">
+          <span class="header__title">ローズガーデン条南苑</span>
+        </a>
+      </h1>
+    </div>
+  </header>
+
+  <main>
+    <!-- メインビジュアル -->
+    <section class="main-visual">
+      <div class="main-visual__inner">
+
+        <div class="main-visual__content">
+
+          <!-- 施設名・ロゴ -->
+          <h1 class="main-visual__title">
+            <img src="images/fv-logo.png" alt="ローズ華ちとせ 小規模多機能型居宅介護" width="1728" height="893">
+          </h1>
+
+          <!-- お問い合わせ -->
+          <div class="main-visual__contact">
+            <a href="contact.html" class="main-visual__contact-link">
+              <img src="images/fv-contact.png" alt="お問い合わせはコチラ">
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- お問い合わせフォーム -->
+    <section class="contact-form" id="contact-form">
+      <div class="contact-form__inner inner">
+
+        <!-- 共通見出し -->
+        <h2 class="common__heading">
+          <span class="common__heading-text">お問い合わせフォーム</span>
+        </h2>
+
+        <p class="contact-form__lead">
+          下記フォームに必要事項を入力後、確認ボタンを押してください。
+        </p>
+
+        <form class="contact-form__form" action="#" method="post">
+
+          <!-- 必須項目 -->
+          <div class="contact-form__group">
+            <h3 class="contact-form__group-title">○必須項目</h3>
+
+            <div class="contact-form__table">
+
+              <!-- 氏名 -->
+              <div class="contact-form__row">
+                <div class="contact-form__label">
+                  <label for="contact-name">
+                    氏名 <span class="contact-form__required">※必須</span>
+                  </label>
+                </div>
+                <div class="contact-form__field">
+                  <input type="text" id="contact-name" name="your-name" autocomplete="name" required>
+                </div>
+              </div>
+
+              <!-- ふりがな -->
+              <div class="contact-form__row">
+                <div class="contact-form__label">
+                  <label for="contact-kana">
+                    ふりがな <span class="contact-form__required">※必須</span>
+                  </label>
+                </div>
+                <div class="contact-form__field">
+                  <input type="text" id="contact-kana" name="your-kana" required>
+                </div>
+              </div>
+
+              <!-- 電話番号 -->
+              <div class="contact-form__row">
+                <div class="contact-form__label">
+                  <label for="contact-tel">
+                    電話番号 <span class="contact-form__required">※必須</span>
+                  </label>
+                </div>
+                <div class="contact-form__field">
+                  <input type="tel" id="contact-tel" name="your-tel" autocomplete="tel" required>
+                </div>
+              </div>
+
+              <!-- お問い合わせ内容 -->
+              <div class="contact-form__row contact-form__row--textarea">
+                <div class="contact-form__label">
+                  <label for="contact-message">
+                    お問い合わせ内容 <span class="contact-form__required">※必須</span>
+                  </label>
+                </div>
+                <div class="contact-form__field">
+                  <textarea id="contact-message" name="your-message" rows="8" required></textarea>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- 任意項目 -->
+          <div class="contact-form__group contact-form__group--optional">
+            <h3 class="contact-form__group-title">
+              ○任意項目<br>
+              下記項目をご入力頂くとスムーズに進めることが出来ます。
+            </h3>
+
+            <div class="contact-form__table">
+
+              <!-- メールアドレス -->
+              <div class="contact-form__row">
+                <div class="contact-form__label">
+                  <label for="contact-email">メールアドレス（半角）</label>
+                </div>
+                <div class="contact-form__field">
+                  <input type="email" id="contact-email" name="your-email" autocomplete="email">
+                </div>
+              </div>
+
+              <!-- 介護度 -->
+              <div class="contact-form__row">
+                <div class="contact-form__label">
+                  <label for="contact-care">
+                    通所、入所をご検討の方は<br>介護度
+                  </label>
+                </div>
+                <div class="contact-form__field">
+                  <input type="text" id="contact-care" name="your-care">
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- プライバシーポリシー -->
+          <div class="contact-form__privacy">
+            <h3 class="contact-form__privacy-title">
+              プライバシーポリシー
+            </h3>
+
+            <div class="contact-form__privacy-content">
+
+              <h4>1. 個人情報の取り扱いについて</h4>
+              <p>
+                個人情報の保護に関する法令等を遵守し、お問い合わせフォームを通じて取得したお名前、電話番号、メールアドレス、お問い合わせ内容、介護度等の個人情報を適切に取り扱います。
+              </p>
+
+              <h4>2. 個人情報の利用目的</h4>
+              <p>
+                取得した個人情報は、以下の目的の範囲内で利用します。
+              </p>
+              <ul>
+                <li>お問い合わせへの回答およびご連絡</li>
+                <li>介護サービスに関するご相談やご案内</li>
+                <li>サービスの利用に関する確認および対応</li>
+                <li>その他、お問い合わせに関連する業務</li>
+              </ul>
+              <p>
+                取得した個人情報を上記以外の目的で利用する場合は、法令に基づく場合を除き、あらかじめご本人の同意を得るものとします。
+              </p>
+
+              <h4>3. 個人情報の第三者提供について</h4>
+              <p>
+                当事業所は、法令に基づく場合を除き、ご本人の同意なく個人情報を第三者に提供することはありません。
+              </p>
+
+              <h4>4. 個人情報の安全管理について</h4>
+              <p>
+                当事業所は、取得した個人情報の漏えい、紛失、改ざん、不正アクセス等を防止するため、適切な安全管理措置を講じ、個人情報の保護に努めます。
+              </p>
+
+              <h4>5. 個人情報の開示・訂正等について</h4>
+              <p>
+                ご本人から、ご自身の個人情報について開示、訂正、利用停止等のお申し出があった場合は、本人確認を行ったうえで、法令に従い適切に対応します。
+              </p>
+
+              <h4>6. プライバシーポリシーの変更について</h4>
+              <p>
+                当事業所は、必要に応じて本ポリシーの内容を見直し、変更することがあります。変更後のプライバシーポリシーは、当ホームページに掲載した時点から適用されるものとします。
+              </p>
+
+              <h4>7. お問い合わせ窓口</h4>
+              <p>
+                個人情報の取り扱いに関するお問い合わせは、下記までご連絡ください。
+              </p>
+
+              <p class="contact-form__privacy-address">
+                小規模多機能型居宅介護　ローズ華ちとせ<br>
+                大阪府泉大津市北豊中町１丁目２-15<br>
+                電話番号：0725-51-7511
+              </p>
+
+            </div>
+          </div>
+
+          <!-- 同意 -->
+          <div class="contact-form__agreement">
+            <label class="contact-form__agreement-label">
+              <input type="checkbox" name="privacy-agreement" value="1" required>
+              <span>プライバシーポリシーに同意する</span>
+            </label>
+          </div>
+
+          <!-- ボタン -->
+          <div class="contact-form__buttons">
+            <button type="submit" class="contact-form__button contact-form__button--submit">
+              確　認
+            </button>
+
+            <button type="reset" class="contact-form__button contact-form__button--reset">
+              リセット
+            </button>
+          </div>
+
+        </form>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- フッター -->
+  <footer class="footer" id="footer">
+
+    <!-- ページトップ -->
+    <a href="#" class="footer__pagetop" aria-label="ページの先頭へ戻る">
+      <img src="images/footer-page-top.png" alt="TOP" width="80" height="86" loading="lazy" decoding="async">
+    </a>
+
+    <div class="footer__inner">
+
+      <div class="footer__content">
+
+        <!-- ロゴ・施設名 -->
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <img src="images/logo-rose-garden.png" alt="ローズ華ちとせ ロゴ" width="80" height="80" loading="lazy"
+              decoding="async">
+          </div>
+
+          <div class="footer__brand-text">
+            <p class="footer__subtitle">
+              小規模多機能型居宅介護
+            </p>
+            <p class="footer__name">
+              ローズ華ちとせ
+            </p>
+          </div>
+        </div>
+
+        <!-- 施設情報 -->
+        <div class="footer__info">
+          <p>〒595-0012</p>
+          <p>大阪府泉大津市北豊中町１丁目２-15</p>
+          <p>
+            TEL
+            <a href="tel:0725517511">0725-51-7511</a>
+          </p>
+        </div>
+
+      </div>
+
+      <!-- コピーライト -->
+      <p class="footer__copyright">
+        Copyright (C) 社会福祉法人 豊中福祉会 All Rights Reserved.
+      </p>
+
+    </div>
+  </footer>
+</body>
+
+</html>
