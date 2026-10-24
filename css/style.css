@@ -1803,6 +1803,10 @@ FEATURES
     padding: 70px 0 80px;
   }
 
+  .contact__heading {
+    font-size: var(--fz35);
+  }
+
   .contact__box {
     flex-direction: column;
     gap: 40px;
@@ -1837,7 +1841,16 @@ FEATURES
     height: 32px;
   }
 }
-
+@media only screen and (max-width: 399px) {
+  .contact__title {
+    font-size: var(--fz18);
+  }
+}
+@media only screen and (max-width: 360px) {
+  .contact__title {
+    font-size: 14px;
+  }
+}
 /* =========================
    FOOTER
 ========================= */
